@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Ordering</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #ff6600;
+            color: white;
+            padding: 20px;
+        }
+        .menu {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 20px 0;
+        }
+        .menu-item {
+            background: white;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 200px;
+        }
+        button {
+            background: #ff6600;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background: #cc5500;
+        }
+        .order-form {
+            margin-top: 20px;
+            padding: 20px;
+            background: white;
+            width: 50%;
+            margin: auto;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Food Delivery Website</h1>
+    </header>
+    <div class="container">
+        <h2>Our Menu</h2>
+        <div class="menu">
+            <div class="menu-item">
+                <h3>Pizza</h3>
+                <p>$10.99</p>
+                <button>Order Now</button>
+            </div>
+            <div class="menu-item">
+                <h3>Burger</h3>
+                <p>$5.99</p>
+                <button>Order Now</button>
+            </div>
+            <div class="menu-item">
+                <h3>Pasta</h3>
+                <p>$7.99</p>
+                <button>Order Now</button>
+            </div>
+        </div>
+        <div class="order-form">
+            <h2>Place Your Order</h2>
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <select required>
+                    <option value="">Select Food Item</option>
+                    <option value="pizza">Pizza</option>
+                    <option value="burger">Burger</option>
+                    <option value="pasta">Pasta</option>
+                </select>
+                <input type="number" placeholder="Quantity" required>
+                <button type="submit">Submit Order</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
